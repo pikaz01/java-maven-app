@@ -1,6 +1,5 @@
 pipeline{
-   agent {
-       label "jenkins master"
+   agent any
    }
     tools {
         maven 'maven'

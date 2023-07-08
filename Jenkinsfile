@@ -1,6 +1,6 @@
 pipeline{
    agent {
-       label "mybuildserver"
+       label "any"
    }
     tools {
         maven 'maven'
@@ -9,7 +9,7 @@ pipeline{
         stage("code checkout"){
             steps{
                 echo "========checking out code from github repo========"
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '2d64d980-832f-4dd0-b22d-b5cb971e0a7a', url: 'https://github.com/vcroshan/simple-java-maven-app.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '2d64d980-832f-4dd0-b22d-b5cb971e0a7a', url: 'https://github.com/pikaz01/java-maven-app.git']]])
             }
             post{
                 success{

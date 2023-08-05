@@ -81,7 +81,7 @@
     <distributionManagement>
     <snapshotRepository>
       <id>java-maven-app-snapshots</id>
-      <url>http://172.31.16.236:8081/repository/java-maven-app-SNAPSHOT/</url>
+      <url>http://172.31.16.236:8081/repository/java-maven-app-snapshots/</url>
     </snapshotRepository>
     <repository>
     
